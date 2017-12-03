@@ -1,0 +1,122 @@
+.wp-economy-parity {
+    border: none !important;
+}
+
+.wp-economy-parity tr {
+    border: none !important;
+}
+
+.wp-economy-parity tr td {
+    border: none !important;
+}
+
+.wp-economy-parity thead .item {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.wp-economy-parity tbody .item {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wp-economy-parity .arrown-up {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px" viewBox="0 0 24 24"> <path fill="green" d="M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,7L7,12H10V16H14V12H17L12,7Z" /></svg>');
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.wp-economy-parity .arrown-down {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px" viewBox="0 0 24 24"> <path fill="red" d="M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,7L7,12H10V16H14V12H17L12,7Z" /></svg>');
+    transform: rotate(180deg);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.parityContainer {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.parityContainer .parityHeader {
+    display: block;
+    width: 100%;
+}
+
+.parityContainer .parityHeader .parityPrice {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin-right: 10px;
+}
+
+.parityContainer .parityHeader .parityIcon {
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+
+.parityContainer .parityHeader .parityIcon.arrown-up {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px" viewBox="0 0 24 24"> <path fill="green" d="M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,7L7,12H10V16H14V12H17L12,7Z" /></svg>');
+}
+
+.parityContainer .parityHeader .parityIcon.arrown-down {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px" viewBox="0 0 24 24"> <path fill="red" d="M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,7L7,12H10V16H14V12H17L12,7Z" /></svg>');
+    transform: rotate(180deg);
+
+}
+
+.parityContainer .parityHeader .parityChangeRate {
+    font-size: 18px;
+}
+
+.parityContainer .parityHeader .parityChangeRate.red {
+    color: red;
+}
+
+.parityContainer .parityHeader .parityChangeRate.green {
+    color: green;
+}
+
+.parityContent {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+.parityContent .parityColumn {
+    width: calc(50% - 20px);
+    padding: 10px;
+    float: left;
+}
+
+.parityContent .parityItem {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.parityContent .parityItem:last-child {
+    border-bottom: none;
+}
+.parityContent .parityItem h5.title {
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.parityContent .parityItem span {
+    color: #888;
+}
